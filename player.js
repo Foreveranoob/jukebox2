@@ -15,6 +15,10 @@
 // Returns a note object (e.g. {pitch: "C#", beats: 2}).
 // If a number of beats is not present, then it defaults to 1.
 //
+
+let songList = [];
+let nameList = [];
+
 var parseNote = function(string) {
   var parts = string.split('*');
   var pitch = parts[0];

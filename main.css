@@ -7,6 +7,8 @@
   padding: 5px;
 }
 
+
+
 #song-queue li {
   border-color: #282828;
   margin-bottom: 20px;
@@ -18,10 +20,28 @@
   cursor: pointer;
 }
 
+#played-songs {
+  list-style:none;
+  padding-left: 0;
+  min-height: 150px;
+  border: 2px dashed #282828;
+  border-radius: 4px;
+  padding: 5px;
+}
+
 #song-form input[name="notes"] {
   max-width: 500px;
   margin-right: 1em;
   float: left;
+}
+
+li.foo-bar .hover-notes {
+  transition: opacity .2s ease;
+  opacity: 0;
+}
+
+li.foo-bar:hover .hover-notes {
+  opacity: 1;
 }
 
 #play-button {
